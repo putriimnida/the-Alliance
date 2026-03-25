@@ -19,4 +19,23 @@ Research Data Management -> <https://www.alliancecan.ca/en/services/research-dat
 Research Software -> CERN Virtual Machine File System (CVMFS), Jupyter Hub, Magic Castle, Software Repository.<br>
 Quantum computing services -> MonarQ available via the Narval cluster.<br>
 
+## Trillium quickstart
+1. Via Browser with Open OnDemand
+2. Terminal access with ssh
+Use this command to log into one of the login nodes of the CPU subcluster:
+```
+$ ssh -i /PATH/TO/SSH_PRIVATE_KEY  MYALLIANCEUSERNAME@trillium.scinet.utoronto.ca
+```
+To log into the login node for the GPU cluster, use this command
+```
+$ ssh -i /PATH/TO/SSH_PRIVATE_KEY  MYALLIANCEUSERNAME@trillium-gpu.scinet.utoronto.ca
+```
+Note:<br>
+The Trillium login nodes are where you develop, edit, compile, prepare and submit jobs.<br>
+The CPU login nodes and the GPU login node are not part of the compute nodes but they have the same architecture, operating system, and software stack as the CPU and GPU compute nodes, respectively.<br>
+You can ssh from one login node to another using their internal hostnames `tri-login01`, ..., `tri-login06` and `trig-login01` (the latter is the GPU login node).<br>
+If you add the option -Y you enable X11 forwarding, which allows graphical programs on Trillium to open windows on your local computer.<br>
+To run on compute nodes, you must submit a batch job.<br>
+
+
 source: https://docs.alliancecan.ca/wiki/Technical_documentation
