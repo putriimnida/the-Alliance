@@ -37,5 +37,15 @@ You can ssh from one login node to another using their internal hostnames `tri-l
 If you add the option -Y you enable X11 forwarding, which allows graphical programs on Trillium to open windows on your local computer.<br>
 To run on compute nodes, you must submit a batch job.<br>
 
+## Cloud quickstart
+### Before you start
+1. Have a cloud project, cloud will be on Nibi cluster (active cluster).<br>
+2. Have a compatible browser such as Firefox and Chrome.
+### Creating your first virtual machine
+1. Log in to the cloud interface to access your project.<br>
+2. Check your OpenStack dashboard that shows an overview of all the available resources.
+
+
+
 
 source: https://docs.alliancecan.ca/wiki/Technical_documentation
